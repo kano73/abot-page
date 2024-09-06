@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Offside&display=swap');
+
+.offside-regular {
+    font-family: "Offside", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    font-family: "Offside", sans-serif;
+    color:#2c2b2b;
+    margin: 0;
+    padding: 0;
+}
+html{
+    position: absolute;
+    background-image: linear-gradient(to bottom, #92b8bfaf, #38757caf);
+}
+.divmain{
+    box-shadow: 0 0 0.2rem #4c4c4cb4;
+}
+body header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 3rem;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+
+    background-color: #7fd0ff;
+}
+.mainlogo{
+    width: 3.4rem;
+    height: 3.4rem;
+    border-radius: 50%;
+    background-color: #e0e7ee;
+    border: 0.14rem solid #3d3b3b;
+}.mainlogo::before{
+    position: absolute;
+    left:2.3rem;
+    top:1.3rem;
+    content: '';
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    border: 0.1rem solid #2c2b2b;
+    background-color:#9ae69a;
+}.mainlogo::after{
+    position: absolute;
+    left:1.9rem;
+    bottom:1.2rem;
+    content: '';
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    border: 0.1rem solid #2c2b2b;
+    background-color:#9abce6;
+}.deniz{
+    position: absolute;
+    left:1.8rem;
+    bottom:2rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 0.1rem;
+    border: 0.3rem solid #2c2b2b;
+    border-top: 0;
+    border-right:0 ;
+    -webkit-transform: rotate(55deg);
+
+}.deniz::after{
+    position: absolute;
+    content: '';
+    left:1rem;
+    bottom:0.5rem;
+    width: 0.29rem;
+    height: 0.29rem;
+    border-radius: 50%;
+    background-color:#2c2b2b;
+}
+header{
+    max-height: 2rem;
+    z-index: 10;
+    box-shadow: 0 0 0.3rem rgb(83, 83, 83);
+}
+header .mainname{
+    font-size: 2rem;
+    margin-right: auto;
+}
+.btn:focus:hover{
+    background-color:#65a3ffd6 ;
+    color:#ffffffe8;
+}
+.divsingin:hover .btn:focus:hover{
+    background-color:#65a3ffd6 ;
+    color:#ffffffe8;
+}.btn:focus:hover{
+    background-color:#65a3ffd6 ;
+    color:#ffffffe8;
+}
+header .divlogin,.divsingin{
+    position: relative;
+    display: inline-block;
+    padding: 0.2rem;
+    border-radius: 1.3rem; /* Matches the border-radius of the pseudo-element */
+    overflow: hidden; /* Ensures content does not overflow */
+    
+}
+.divlogin::before, .divsingin::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, #ffc342, #ffdc3e);
+    z-index: -1;
+    border-radius: inherit; /* Matches the container's border radius */
+    padding: 5px; /* Adjust based on border thickness */
+    box-shadow: 0 0 2rem black;
+}
+.btn{
+    font-size: 1.15rem;
+    padding: 0.15em 0.55em;
+    border-radius: 0.9em;
+
+    outline: none;
+    border: none;  
+}
+
+.divlogin:hover , .divsingin:hover {
+    background-color: #d1ffef;
+    box-shadow: 0 0 0.3rem #565656;
+}.divsingin:hover button , .divlogin:hover button{
+    background-color: #a9a9a9b6;
+    color:#56ff13
+}
+.divsingin{
+    margin-right: 2.5rem;
+}
+.space{
+    height: 7rem;
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divmain{
+    display: flex;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0 3rem;
+
+    background-color: antiquewhite;
+}
+p.who{
+    position: relative;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    width: 95%;
+
+    padding: 0;
+    margin: 0;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+
+
+    background-color: #aad15d;
+    border-bottom:0.2rem solid #1683123f;
+    border-radius: 1rem;
+    z-index: 1;
+}p.who::before{
+    position: absolute;
+    content: '';
+    bottom: 10%;
+    height: 3%;
+    width: 80%;
+    background-color: rgba(83, 83, 83, 0.492);
+    border-radius: 60%;
+    z-index: 0;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    max-width: 90%;    
+    margin-bottom: 2rem;
+    padding: 1rem;
+
+    background-color: #76648143;
+    border-radius: 1.5rem;
+}.container:hover{
+    position: relative;
+    left: 0.3rem;
+    bottom: 0.3rem;
+    background-color: #69816443;
+    margin-bottom:1.7rem;
+
+    border-left: 0.25rem solid  #364233a7;
+    border-bottom: 0.32rem solid  #364233a7;
+
+    box-shadow: -0.3rem 0.3rem 0.15rem #33333377;
+}
+.container.container2{
+    display: flex;
+    justify-content: flex-end;
+}
+div.divimage{
+    width: 30rem;
+    margin-right: 2rem;
+}
+img {      
+    max-width: 100%;    
+    height: auto;   
+    border-radius: 1rem;
+}
+
+div.divtextforimage{
+    flex-grow: 1;
+    display: flex;
+    max-width:60%;
+    margin-top: 2rem;
+    padding-right: 2rem;
+
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 96.8vw;
+    min-height: 0;
+    padding: 1rem;
+    padding-bottom: 0;
+
+    background-color: #f0cb90;
+}
+.share.btn {
+    font-size: 1.15rem;
+    scale: 1.5;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 30%;
+    padding: 0.5rem;
+    border-radius: 3rem;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 1;
+    background-color: rgb(255, 199, 108);
+
+    color: #2c2b2b;
+}.share.btn::before {
+    content: '';
+    position: absolute;
+    top: -0.159rem; 
+    left: -0.159rem;
+    right: -0.159rem;
+    bottom: -0.159rem;
+    background: linear-gradient(to bottom, #61f1e5b3, #8fe131b5);
+    z-index: -1;
+    border-radius: inherit;
+}.share.btn::after {
+    content: '';
+    position: absolute;
+    top: 0.159rem; 
+    left: 0.159rem;
+    right: 0.159rem;
+    bottom: 0.159rem;
+    background-color:  #edd493c5;
+    z-index: -1;
+    border-radius: inherit;
+}.share.btn:focus:hover:after{
+    background-color: #7698e1e8;
+}
+div.btm{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+
+
+    width: 100%;
+}div.cory{
+    margin-left:auto ;
+    display: flex;
+    align-items: flex-end;
+
+    position: relative;
+    bottom: 0.2rem;
+}
+nav.sosialmedia{
+    display: flex;
+    align-items: flex-end;
+}
+.sosialmedia img{
+    max-width: 2rem;
+    height: auto;
+    margin: 0.5rem;
+}
